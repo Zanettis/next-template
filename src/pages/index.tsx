@@ -1,7 +1,15 @@
+import { Main } from "next/document";
+import { HomeContainer } from "../styles/HomeStyles"
+import Header from "../../components/Header";
+import HomeHero from "../../components/HomeHero";
+import Experiencias from "../../components/Experiencias";
+
 export default function Home() {
   return (
-    <div>
-      <h1>Hello world</h1>
-    </div>
+    <HomeContainer>
+      <Header />
+      <HomeHero />
+      <Experiencias />
+    </HomeContainer>
   );
 }
